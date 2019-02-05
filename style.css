@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size:62.5%; 
+    box-sizing: border-box;
+}
+body {
+    color: #5E5E5E;
+    background-image: linear-gradient(to right bottom, rgba(252, 74, 26, .7), rgba(247, 183, 51, .5));
+    min-height: 100vh;
+}
+.container {
+    max-width: 100rem;
+    margin: 0 auto; 
+    padding-bottom: 5rem;
+}
+header {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 6rem 0 4rem 0;
+    color: white;
+    background-image: linear-gradient(110deg, rgba(0,0,0, .7), rgba(0,0,0, .8)),
+    url("./img/booksCover.jpg");
+    border-bottom: 1px solid white;
+    box-shadow: 0 .2rem .4rem rgba(0,0,0, .4);
+}
+header h1, header h2 {
+    padding-bottom: 1rem;
+}
+.header__number {
+    font-size: 3rem;
+}
+form {
+    width: 70%;
+    transform: translatex(20%);
+}
+label {
+    display: block;
+    text-align: right;
+}
+label>span {
+	width: 50%;
+	text-align: right;
+	padding-right: 1.3rem;
+	margin-top: 1rem;
+    font-weight: bold;
+    color: #5E5E5E;
+    font-size: 1.5rem;
+    position: relative;
+} 
+ input[type="number"], input[type="text"] {
+	color: #888;
+	width: 50%;
+	padding-left: .5rem;
+	border: 1px solid #C5E2FF;
+	outline: 0;
+	height: 3rem;
+	line-height:1.5rem;
+    margin-bottom: 1.6rem;
+    font-weight: 600;
+    border-radius: .8rem;
+}
+.form__title {
+     text-align: center;
+     color: #5E5E5E;
+     padding: 4rem 0;
+     font-size: 2rem;
+}
+.button {
+    padding: .8rem 1.5rem;
+    border: none;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0, .2);
+    display: inline-block;
+    background: rgba(252, 74, 26, .8);
+    color: white;
+    display: block;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+.button:active{
+   outline: none;
+   box-shadow: 0 0 0 rgba(0,0,0, .2);
+}
+.button:focus{
+   outline: none;
+}
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    background-color: white;
+    font-size: 1.5rem;
+    margin: 5rem auto 0 auto;
+}
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2;} 
+#table tr:hover {background-color: #ddd;}
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(252, 74, 26, .8);
+    color: white;
+}
+#table td {
+    position: relative;
+    width: 33%;
+}
+#table th {
+    box-shadow: 0 .2rem .4rem rgba(0,0,0, .2);
+}
+#table tr:hover #table__icon{
+    display: block;
+ }
+#table__icon {
+    position: absolute;
+    top:8px;
+    right:5px;
+    font-size: 1.5rem;
+    color: rgba(252, 74, 26, .8);
+    cursor: pointer;
+    display: none;
+}
