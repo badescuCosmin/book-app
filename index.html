@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>The Abc library store</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">The Abc library store</h1>
+        <h2 class="header__subTitle">Currently available in store</h2>
+        <h2 class="header__number">0</h2>
+    </header>
+    <div class="container">
+    <form>
+        <h2 class="form__title">Add a book to the list</h2>
+        <label>
+            <span>Book title: </span>
+            <input type="text" placeholder="title" class="book-title">
+       </label>
+       <label>
+            <span>Book author: </span>
+            <input type="text" placeholder="author" class="book-author">
+       </label>
+       <label>
+           <span>Book ISBN: </span>
+           <input type="number" placeholder="nr ISBN" class="book-isbn">
+       </label>
+       <input type="button" class="button" value="Add book">
+    </form>
+    <table id="table">
+        <tr>
+            <th>Book</th>
+            <th>Title</th>
+            <th>ISBN</th>
+        </tr>     
+   </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
